@@ -1,0 +1,11 @@
+https://d.docs.live.net/e50a6142b474c67b/Pictures/Pic/Reflection%20paper%201.docx
+Name: Ssenyonjo James
+Reg No: 26BSCS0120W
+REPORT ON MY WORK
+SEBO FOODS ERP With Materials Management and Financials
+1	Single source of truth: In my prototype purchase order. po-id is the single source of truth,   it’s the primary key created once in MM and used as foreign key in FI modules ensuring that      inventory receipts and accounts payable always reference the same procurement event Quantity on hand and average cost can only change through the stock movements. When goods are received, the stock ledger and journal entry all save in one transactions making all the system to update  .
+2	AI mistakes: Money is stored as REAL (floating point), no VAT and this may result into closure of a business in Uganda due to failure to pay the tax, no goods returns leading to inflated inventory payable financial failures, no approval workflow leading to budget overrun, no invoice matching leading to duplicate payment , and the Mermaid ER diagram that failed to render. Also  I used my hand to  check  out this calculations ( 1000 × 2500 and 1000 × 3500) /(3000)  giving me 3000.
+3       Tool choice and scalability :I Used Python and SQLite  because it can be run anywhere  because it requires no need for mysql servers. It is lightweight and requires zero configuration. The web dashboard needs only the standard library to run 
+ Change at enterprise scale: SQLite allows only one writer at a time, there is no login, and money should be integers or DECIMAL and should be in only one currency.
+
+4        Build versus buy: I Adopted a build approach using python and sqlite to demonstrate proof of concept integration between MM and FI. While build provide full control and zero licensing cost suitable for an academic prototype , we recognise that for production scale , a Buy approach would reduce maintainance risks
