@@ -1,5 +1,5 @@
 # Sebo Foods ERP Prototype (Materials Management + Financials)
-
+**Live demo:** https://sebo-foods-erp.onrender.com
 Midterm project: Generative AI-Assisted ERP System Design.
 A lightweight ERP for a food-manufacturing company. Two integrated modules share **one** SQLite database:
 
