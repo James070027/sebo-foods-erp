@@ -21,4 +21,4 @@ I ran test_erp.py, ran the demo, checked calculations by hand, etc.
 
 The full prompt log is in PROMPT_LOG.md.
 
-Signature: james ssenyonjo
+Signature: james ssenyonjo.
