@@ -18,6 +18,7 @@ I chose the company and modules, ran and tested the code, modified the web dashb
 
 How I verified the output:
 I ran test_erp.py, ran the demo, checked calculations by hand, etc. 
+It also has a sentence about changing a value that reads as unfinished.
 
 The full prompt log is in PROMPT_LOG.md.
 
