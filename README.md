@@ -56,22 +56,73 @@ erDiagram
     suppliers ||--o{ purchase_orders : places
     purchase_orders ||--|{ po_lines : contains
     materials ||--o{ po_lines : "ordered as"
-    materials ||--o{ stock_movements : "moves"
+    materials ||--o{ stock_movements : moves
     po_lines ||--o{ stock_movements : "receipt ref"
     journal_entries ||--|{ journal_lines : has
     gl_accounts ||--o{ journal_lines : "posted to"
     suppliers ||--o{ journal_lines : "AP sub-ledger"
-    suppliers { int id PK  text name UK  text phone  text email  int active }
-    materials { int id PK  text sku UK  text name  text unit  real reorder_level  real qty_on_hand  real avg_cost }
-    purchase_orders { int id PK  int supplier_id FK  text order_date  text status }
-    po_lines { int id PK  int po_id FK  int material_id FK  real qty_ordered  real unit_cost  real qty_received }
-    stock_movements { int id PK  int material_id FK  text movement_type  real qty  real unit_cost  text ref_type  int ref_id }
-    gl_accounts { int id PK  text code UK  text name  text type }
-    journal_entries { int id PK  text entry_date  text description  text ref_type  int ref_id }
-    journal_lines { int id PK  int entry_id FK  int account_id FK  int supplier_id FK  real debit  real credit }
-```
 
-(If your viewer does not render Mermaid, paste the block into https://mermaid.live to export an image for your submission.)
+    suppliers {
+        int id PK
+        text name UK
+        text phone
+        text email
+        int active
+    }
+    materials {
+        int id PK
+        text sku UK
+        text name
+        text unit
+        real reorder_level
+        real qty_on_hand
+        real avg_cost
+    }
+    purchase_orders {
+        int id PK
+        int supplier_id FK
+        text order_date
+        text status
+    }
+    po_lines {
+        int id PK
+        int po_id FK
+        int material_id FK
+        real qty_ordered
+        real unit_cost
+        real qty_received
+    }
+    stock_movements {
+        int id PK
+        int material_id FK
+        text movement_type
+        real qty
+        real unit_cost
+        text ref_type
+        int ref_id
+    }
+    gl_accounts {
+        int id PK
+        text code UK
+        text name
+        text type
+    }
+    journal_entries {
+        int id PK
+        text entry_date
+        text description
+        text ref_type
+        int ref_id
+    }
+    journal_lines {
+        int id PK
+        int entry_id FK
+        int account_id FK
+        int supplier_id FK
+        real debit
+        real credit
+    }
+```
 
 ## Known limitations (honest scope)
 
