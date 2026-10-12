@@ -11,7 +11,7 @@ Tools used:
 Claude, Microsoft edge.
 
 What AI generated:
-Database schema (schema.sql), seed data, Python service layer and CLI (app.py), automated tests, README and ER diagram.
+Database schema (schema.sql), seed data, Python service layer and CLI (app.py), automated tests, README and ER diagram. The screenshots in the “SCREENSHOTS FOR ERP” folder were generated with Claude’s help by running my web dashboard (web.py) on sample data. They show my project’s real code and results.
 
 What I did myself:
 I chose the company and modules, ran and tested the code, modified the web dashboard,I found and fixed Changing a value where i tested it being weak, while "i received 1000kg at 2500 and 1000kg at 3500 and confirmed that the average was 3000 by hand" is strong 
