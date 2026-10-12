@@ -1,6 +1,9 @@
 # Sebo Foods ERP Prototype (Materials Management + Financials)
-   [Live Demo](https://sebo-foods-erp-2.onrender.com)
-   Hosted on Render’s free tier. The first load may take 30-60 seconds, and demo data resets if the app restarts. 
+
+**Live Demo:** https://sebo-foods-erp-2.onrender.com
+
+*Hosted on Render's free tier. The first load may take 30-60 seconds, and demo data resets if the app restarts.*
+
 Midterm project: Generative AI-Assisted ERP System Design.
 A lightweight ERP for a food-manufacturing company. Two integrated modules share **one** SQLite database:
 
